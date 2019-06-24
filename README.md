@@ -1,6 +1,5 @@
 -- SQL БД для импорта с тестовыми данными
 
---
 
 CREATE TABLE `people` (
   `id` bigint(20) UNSIGNED NOT NULL,
@@ -19,10 +18,6 @@ CREATE TABLE `people` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `people`
---
-
 INSERT INTO `people` (`id`, `fullname`, `imgpath`, `email`, `phone`, `birthdate`, `middleeducation`, `higheducation`, `city`, `vk`, `inst`, `fb`, `created_at`, `updated_at`) VALUES
 (1, 'Королевский Александр Алексеевич', 'https://pp.userapi.com/c630616/v630616373/31fbc/ZhTHWVQ5ygI.jpg', 'korsashak98@mail.ru', '89677120135', '1998-02-11', 'Школа №123', 'СПбГЭТУ \"ЛЭТИ\"', 'Санкт-Петербург', 'https://vk.com/ialeksashai', 'https://instagram.com/ialeksashai', 'https://facebook.com/ialeksashai', NULL, NULL),
 (2, 'Иван Владимирович Кузьмин', 'https://pp.userapi.com/c855324/v855324029/376fb/0l_h62tx3sE.jpg', 'kuzmivla@mail.ru', NULL, '1997-02-11', 'Школа №3', NULL, 'Санкт-Петербург', 'https://vk.com/', NULL, NULL, NULL, NULL),
@@ -33,22 +28,7 @@ INSERT INTO `people` (`id`, `fullname`, `imgpath`, `email`, `phone`, `birthdate`
 (7, 'Кирилл Владимирович Шатц', 'https://pp.userapi.com/c850632/v850632622/e49f2/FgFJuDiAHuY.jpg', NULL, '89561375639', '1990-02-11', 'Школа №114', 'МГУ', 'Москва', NULL, NULL, NULL, NULL, NULL),
 (8, 'Владимир Сергеевич Листейко', 'https://sun1-27.userapi.com/c845221/v845221032/116888/1VSFm0GEVZg.jpg', NULL, NULL, '1990-02-11', NULL, NULL, 'Москва', NULL, NULL, NULL, NULL, NULL);
 
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `people`
---
 ALTER TABLE `people`
   ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `people`
---
 ALTER TABLE `people`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
